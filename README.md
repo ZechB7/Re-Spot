@@ -1,12 +1,10 @@
-# Spotify-Review hello
+# Spotify-Review
 
-jacob maynard
-
-
+- Jacob Maynard
 
 - Holden Claus
 
 - Zech
 
-- nick
+- Nick
 
