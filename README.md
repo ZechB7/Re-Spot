@@ -13,13 +13,16 @@
 
 ## How it Works
 
+This website is a community-driven platform where people share and review their favorite Spotify playlists. Users can search for playlists based on specific users and leave ratings and comments to share their thoughts with the community. The website will also features a leaderboard of the most reviewed playlists and a section for featured curators. Overall, it's a great place to discover new music and connect with other music lovers.
 
 ## APIs Used
 
-
-
+Spotify23
+- https://rapidapi.com/Glavier/api/spotify23
 
 ## Database
+
+
 
 ## WireFrame
 
@@ -49,13 +52,15 @@ Deployed:
 With this project we would like to expand our scope beyond
 
 These are some of our purposed additions:
+- We would like to let the user connect and follow said playlists through the site
+- We would like to let the user sample 30 second snippetsof songs from the playlists
+- We would like to allow users to search genres instead of just users playlists for broader searching
 
 
 # Resources
 - [W3schools](https://www.w3schools.com)
 - [Developer.Mozilla](https://developer.mozilla.org/en-US)
 - [Geeksforgeeks](https://www.geeksforgeeks.org/javascript)
-- [Trello](https://trello.com/b/RMK5YooL/utabc-project-2)
 - [Heroku](https://heroku.com/login)
 - [PrimeReact](https://primereact.org)
 
