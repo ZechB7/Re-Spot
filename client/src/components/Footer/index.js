@@ -16,16 +16,9 @@ const Footer = () => {
           </button>
         )}
         <h4>
-          Made with{' '}
-          <span
-            className="emoji"
-            role="img"
-            aria-label="heart"
-            aria-hidden="false"
-          >
-            ❤️
-          </span>{' '}
-          by the Tech Thoughts team.
+          Made with React, GraphQL, Mongoose <br />
+          Styled with PrimeReact<br />
+          by the reSpot team.
         </h4>
       </div>
     </footer>
