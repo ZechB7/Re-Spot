@@ -63,11 +63,11 @@ These are some of our purposed additions:
 - [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)
 
 # Primary Collaborators
-- Reuben Schmolke (https://github.com/RoobyDoobster)
-- Zechariah Barrett (https://github.com/ZechB7)
-- Jacob Maynard (https://github.com/Maynardj123)
-- Nick McCarthy (https://github.com/Nick-McCarthy)
-- Holden Claus (https://github.com/HoldyClaus)
+- Reuben Schmolke [Github] (https://github.com/RoobyDoobster)
+- Zechariah Barrett [Github] (https://github.com/ZechB7)
+- Jacob Maynard [Github] (https://github.com/Maynardj123)
+- Nick McCarthy [Github] (https://github.com/Nick-McCarthy)
+- Holden Claus [Github] (https://github.com/HoldyClaus)
 
 ## Secondary Collaborators
 - 
