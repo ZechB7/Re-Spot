@@ -1,7 +1,10 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 mongoose.connect(
-  process.env.MONGODB_URI || 'mongodb+srv://admin:password12345@classwork.gx4gsuu.mongodb.net/reSpot',
+
+  process.env.MONGODB_URI || '',
+
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
