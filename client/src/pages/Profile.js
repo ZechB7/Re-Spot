@@ -2,8 +2,8 @@ import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import ThoughtForm from '../components/ThoughtForm';
-import ThoughtList from '../components/ThoughtList';
+import ReviewForm from '../components/ReviewForm';
+import ReviewList from '../components/ReviewList';
 
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
@@ -46,6 +46,7 @@ function GetSpotifyUserData(){
         <h2 className="col-12 col-md-10 bg-dark text-light p-3 mb-5">
           Viewing {userParam ? `${user.username}'s` : 'your'} profile.
         </h2>
+
         
 {/* map here */}
         <p>link to comment on this playlist</p>
@@ -53,6 +54,7 @@ function GetSpotifyUserData(){
           <ThoughtList
             thoughts={user.thoughts}
             title={`${user.username}'s thoughts...`}
+
             showTitle={false}
             showUsername={false}
           />
@@ -62,7 +64,7 @@ function GetSpotifyUserData(){
             className="col-12 col-md-10 mb-3 p-3"
             style={{ border: '1px dotted #1a1a1a' }}
           >
-            <ThoughtForm />
+            <ReviewForm />
           </div>
         )}
       </div>
