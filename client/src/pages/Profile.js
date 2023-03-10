@@ -8,6 +8,7 @@ import ThoughtList from '../components/ThoughtList';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
+import {useState,useEffect} from 'react'
 
 const Profile = () => {
   const { username: userParam } = useParams();
@@ -35,6 +36,10 @@ const Profile = () => {
     );
   }
       //fetch here
+function GetSpotifyUserData(){
+  const [userSpotify,setUserSpotify] = useState("");
+}
+
   return (
     <div>
       <div className="flex-row justify-center mb-3">
