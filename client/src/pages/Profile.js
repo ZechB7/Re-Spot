@@ -42,10 +42,10 @@ const Profile = () => {
           Viewing {userParam ? `${user.username}'s` : 'your'} profile. addding just so i can push
         </h2>
 
-        <mapOverthis>
+        <mapOverEachPlaylistInUser>
         <p>link to comment on this playlist</p>
         <iframe src="https://open.spotify.com/embed/playlist/5hGqFnseTbdhw78dNE13XN?utm_source=generator" width="83.3%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </mapOverthis>
+        </mapOverEachPlaylistInUser>
 
         <div className="col-12 col-md-10 mb-5">
           <ThoughtList
