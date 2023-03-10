@@ -2,35 +2,35 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
 
-import { ADD_THOUGHT } from '../../utils/mutations';
-import { QUERY_THOUGHTS, QUERY_ME } from '../../utils/queries';
+import { ADD_REVIEW } from '../../utils/mutations';
+import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
 
-const ThoughtForm = () => {
-  const [thoughtText, setThoughtText] = useState('');
+const ReviewForm = () => {
+  const [reviewText, setReviewText] = useState('');
 
   const [characterCount, setCharacterCount] = useState(0);
 
-  const [addThought, { error }] = useMutation(ADD_THOUGHT, {
-    update(cache, { data: { addThought } }) {
+  const [addReview, { error }] = useMutation(ADD_REVIEW, {
+    update(cache, { data: { addReview } }) {
       try {
-        const { thoughts } = cache.readQuery({ query: QUERY_THOUGHTS });
+        const { reviews } = cache.readQuery({ query: QUERY_REVIEWS });
 
         cache.writeQuery({
-          query: QUERY_THOUGHTS,
-          data: { thoughts: [addThought, ...thoughts] },
+          query: QUERY_REVIEWS,
+          data: { reviews: [addReview, ...reviews] },
         });
       } catch (e) {
         console.error(e);
       }
 
-      // update me object's cache
-      const { me } = cache.readQuery({ query: QUERY_ME });
+      /* update me object's cache
+      const {me} = cache.readQuery({ query: QUERY_ME });
       cache.writeQuery({
         query: QUERY_ME,
-        data: { me: { ...me, thoughts: [...me.thoughts, addThought] } },
-      });
+        data: { me: { ...me, reviews: [...me.reviews, addReview] } },
+      });*/
     },
   });
 
@@ -38,14 +38,14 @@ const ThoughtForm = () => {
     event.preventDefault();
 
     try {
-      const { data } = await addThought({
+      const { data } = await addReview({
         variables: {
-          thoughtText,
-          thoughtAuthor: Auth.getProfile().data.username,
+          reviewText,
+          reviewAuthor: Auth.getProfile().data.username,
         },
       });
 
-      setThoughtText('');
+      setReviewText('');
     } catch (err) {
       console.error(err);
     }
@@ -54,8 +54,8 @@ const ThoughtForm = () => {
   const handleChange = (event) => {
     const { name, value } = event.target;
 
-    if (name === 'thoughtText' && value.length <= 280) {
-      setThoughtText(value);
+    if (name === 'reviewText' && value.length <= 280) {
+      setReviewText(value);
       setCharacterCount(value.length);
     }
   };
@@ -67,9 +67,8 @@ const ThoughtForm = () => {
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 ${
-              characterCount === 280 || error ? 'text-danger' : ''
-            }`}
+            className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
+              }`}
           >
             Character Count: {characterCount}/280
           </p>
@@ -79,9 +78,9 @@ const ThoughtForm = () => {
           >
             <div className="col-12 col-lg-9">
               <textarea
-                name="thoughtText"
-                placeholder="Here's a new thought..."
-                value={thoughtText}
+                name="reviewText"
+                placeholder="Here's a new review..."
+                value={reviewText}
                 className="form-input w-100"
                 style={{ lineHeight: '1.5', resize: 'vertical' }}
                 onChange={handleChange}
@@ -110,4 +109,4 @@ const ThoughtForm = () => {
   );
 };
 
-export default ThoughtForm;
+export default ReviewForm;
