@@ -2,8 +2,8 @@ import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import ThoughtForm from '../components/ThoughtForm';
-import ThoughtList from '../components/ThoughtList';
+import ReviewForm from '../components/ReviewForm';
+import ReviewList from '../components/ReviewList';
 
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
@@ -39,13 +39,18 @@ const Profile = () => {
     <div>
       <div className="flex-row justify-center mb-3">
         <h2 className="col-12 col-md-10 bg-dark text-light p-3 mb-5">
-          Viewing {userParam ? `${user.username}'s` : 'your'} profile.
+          Viewing {userParam ? `${user.username}'s` : 'your'} profile. addding just so i can push
         </h2>
 
+        <mapOverEachPlaylistInUser>
+          <p>link to comment on this playlist</p>
+          <iframe src="https://open.spotify.com/embed/playlist/5hGqFnseTbdhw78dNE13XN?utm_source=generator" width="83.3%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </mapOverEachPlaylistInUser>
+
         <div className="col-12 col-md-10 mb-5">
-          <ThoughtList
-            thoughts={user.thoughts}
-            title={`${user.username}'s thoughts...`}
+          <ReviewList
+            reviews={user.reviews}
+            title={`${user.username}'s reviews...`}
             showTitle={false}
             showUsername={false}
           />
@@ -55,7 +60,7 @@ const Profile = () => {
             className="col-12 col-md-10 mb-3 p-3"
             style={{ border: '1px dotted #1a1a1a' }}
           >
-            <ThoughtForm />
+            <ReviewForm />
           </div>
         )}
       </div>
