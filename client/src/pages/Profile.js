@@ -34,23 +34,22 @@ const Profile = () => {
       </h4>
     );
   }
-
+      //fetch here
   return (
     <div>
       <div className="flex-row justify-center mb-3">
         <h2 className="col-12 col-md-10 bg-dark text-light p-3 mb-5">
-          Viewing {userParam ? `${user.username}'s` : 'your'} profile. addding just so i can push
+          Viewing {userParam ? `${user.username}'s` : 'your'} profile.
         </h2>
 
-        <mapOverEachPlaylistInUser>
-          <p>link to comment on this playlist</p>
-          <iframe src="https://open.spotify.com/embed/playlist/5hGqFnseTbdhw78dNE13XN?utm_source=generator" width="83.3%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </mapOverEachPlaylistInUser>
+        
+{/* map here */}
+        <p>link to comment on this playlist</p>
+        <iframe  src="https://open.spotify.com/embed/playlist/5hGqFnseTbdhw78dNE13XN?utm_source=generator" width="83.3%" height="155" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        <div className="col-12 col-md-10 mb-5">
+          <ThoughtList
+            thoughts={user.thoughts}
+            title={`${user.username}'s thoughts...`}
 
-        <div className="col-12 col-md-10 mb-5">
-          <ReviewList
-            reviews={user.reviews}
-            title={`${user.username}'s reviews...`}
             showTitle={false}
             showUsername={false}
           />
