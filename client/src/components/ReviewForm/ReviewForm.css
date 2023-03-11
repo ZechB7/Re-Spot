@@ -1,0 +1,11 @@
+.review-form button:hover {
+    color: black;
+  }
+  
+  .review-form .text-danger {
+    color: yellow !important;
+  }
+  
+  .review-form .form-input {
+    height: 8rem;
+  }
