@@ -6,6 +6,8 @@ import { ADD_USER } from '../utils/mutations';
 
 import Auth from '../utils/auth';
 
+import './Signup.css'
+
 const Signup = () => {
   const [formState, setFormState] = useState({
     username: '',
@@ -39,10 +41,10 @@ const Signup = () => {
   };
 
   return (
-    <main className="flex-row justify-center mb-4">
-      <div className="col-12 col-lg-10">
-        <div className="card">
-          <h4 className="card-header bg-dark text-light p-2">Sign Up</h4>
+    <main className="flex-row justify-center mb-4" >
+      <div className="col-12 col-lg-10" >
+        <div className="card" style={{backgroundImage: 'linear-gradient(green,black)', borderRadius:'5px'}}>
+          <h4 className="card-header bg-dark text-light p-2" style={{textAlign: 'center'}}>Sign Up</h4>
           <div className="card-body">
             {data ? (
               <p>
@@ -50,7 +52,7 @@ const Signup = () => {
                 <Link to="/">back to the homepage.</Link>
               </p>
             ) : (
-              <form onSubmit={handleFormSubmit}>
+              <form onSubmit={handleFormSubmit} >
                 <input
                   className="form-input"
                   placeholder="Your username"
@@ -58,6 +60,9 @@ const Signup = () => {
                   type="text"
                   value={formState.name}
                   onChange={handleChange}
+                  style= {{
+                    backgroundColor:'#92e6a7',
+                 }}
                 />
                 <input
                   className="form-input"
@@ -66,6 +71,7 @@ const Signup = () => {
                   type="email"
                   value={formState.email}
                   onChange={handleChange}
+                  style= {{backgroundColor:'#92e6a7'}}
                 />
                 <input
                   className="form-input"
@@ -74,10 +80,12 @@ const Signup = () => {
                   type="password"
                   value={formState.password}
                   onChange={handleChange}
+                  style= {{backgroundColor:'#92e6a7'}}
                 />
                 <button
                   className="btn btn-block btn-primary"
-                  style={{ cursor: 'pointer' }}
+                  idName='submitButton'
+                  style={{ cursor: 'pointer'}}
                   type="submit"
                 >
                   Submit
