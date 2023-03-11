@@ -9,3 +9,7 @@
   .review-form .form-input {
     height: 8rem;
   }
+
+  .login:active {
+    color: red;
+  }
