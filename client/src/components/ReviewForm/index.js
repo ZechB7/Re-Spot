@@ -97,7 +97,11 @@ const ReviewForm = () => {
       ) : (
         <p>
           You need to be logged in to share your review. Please{' '}
-          <Link to="/login">login</Link> or <Link to="/signup">signup.</Link>
+          <Link to="/login" style={{ color: 'lightgreen'}}>login</Link>
+          
+          {' '}or{' '}
+          
+          <Link to="/signup" style={{ color: 'lightgreen'}}>signup.</Link>
         </p>
       )}
     </div>
