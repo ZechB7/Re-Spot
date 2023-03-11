@@ -8,6 +8,7 @@ import ReviewList from '../components/ReviewList';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
+import {useState,useEffect} from 'react'
 
 const Profile = () => {
   const { username: userParam } = useParams();
@@ -35,6 +36,10 @@ const Profile = () => {
     );
   }
       //fetch here
+function GetSpotifyUserData(){
+  const [userSpotify,setUserSpotify] = useState("");
+}
+
   return (
     <div>
       <div className="flex-row justify-center mb-3">
@@ -46,8 +51,8 @@ const Profile = () => {
 {/* map here */}
         <p>link to comment on this playlist</p>
         <iframe  src="https://open.spotify.com/embed/playlist/5hGqFnseTbdhw78dNE13XN?utm_source=generator" width="83.3%" height="155" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>        <div className="col-12 col-md-10 mb-5">
-          <ReviewForm
-            review={user.reviews}
+          <ReviewList
+            reviews={user.reviews}
             title={`${user.username}'s thoughts...`}
 
             showTitle={false}
