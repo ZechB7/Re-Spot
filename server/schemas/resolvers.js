@@ -114,6 +114,20 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    updateReview: async (parent, { reviewId, reviewText}, context) => {
+      if (context.user) {
+        const review = await Review.findOneAndUpdate(
+          { _id: reviewId, reviewAuthor: context.user.username},
+          {reviewText},
+          {new:true}
+        )
+        if(!review) {
+          throw new Error('There is no review with this ID')
+        }
+        return review
+      }
+      throw new AuthenticationError('You need to be logged in!')
+    }
   },
 };
 
