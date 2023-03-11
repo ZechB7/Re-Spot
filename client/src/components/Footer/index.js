@@ -1,6 +1,8 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 
+import './Footer.css';
+
 const Footer = () => {
   const location = useLocation();
   const navigate = useNavigate();
@@ -9,13 +11,13 @@ const Footer = () => {
       <div className="container text-center mb-5">
         {location.pathname !== '/' && (
           <button
-            className="btn btn-dark mb-3"
+            className="btn mb-3"
             onClick={() => navigate(-1)}
           >
             &larr; Go Back
           </button>
         )}
-        <h4>
+        <h4 className="thanks">
           Made with React, GraphQL, Mongoose <br />
           Styled with PrimeReact<br />
           by the reSpot team.

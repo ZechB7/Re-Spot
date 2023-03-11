@@ -57,14 +57,7 @@ return (
         </mapOverEachPlaylistInUser>
 
         <div className="col-12 col-md-10 mb-5">
-          <ReviewList
-            reviews={user.reviews}
-            title={`${user.username}'s thoughts...`}
 
-      {/* map here */}
-      <p>link to comment on this playlist</p>
-      
-      <div className="col-12 col-md-10 mb-5">
         <ReviewList
           reviews={user.reviews}
           title={`${user.username}'s thoughts...`}

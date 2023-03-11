@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import './ReviewList.css';
+
 const ReviewList = ({
   reviews,
   title,
@@ -12,15 +14,15 @@ const ReviewList = ({
   }
 
   return (
-    <div>
+    <div className="reviewList">
       {showTitle && <h3>{title}</h3>}
       {reviews &&
         reviews.map((review) => (
           <div key={review._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
+            <h4 className="p-2 m-0">
               {showUsername ? (
                 <Link
-                  className="text-light"
+                  className="link"
                   to={`/profiles/${review.reviewAuthor}`}
                 >
                   {review.reviewAuthor} <br />
