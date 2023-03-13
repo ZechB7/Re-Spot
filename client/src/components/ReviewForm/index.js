@@ -7,7 +7,11 @@ import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
 
 import Auth from '../../utils/auth';
 
-const ReviewForm = () => {
+const ReviewForm = (prop) => {
+
+
+  console.log({reviewId: prop?.reviewId})
+
   const [reviewText, setReviewText] = useState('');
 
   const [characterCount, setCharacterCount] = useState(0);
