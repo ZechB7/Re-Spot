@@ -1,0 +1,13 @@
+::placeholder {
+    color: black;
+}
+
+body {
+    background-color:lightslategray
+}
+
+.form-input:hover {
+    animation-duration: 4s;
+    width: 98%;
+    justify-content: center;
+}
