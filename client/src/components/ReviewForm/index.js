@@ -69,7 +69,7 @@ const ReviewForm = () => {
             className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
               }`}
           >
-            Character Count: {characterCount}/280
+            Character Count: {characterCount}/280 
           </p>
           <form
             className="flex-row justify-center justify-space-between-md align-center"

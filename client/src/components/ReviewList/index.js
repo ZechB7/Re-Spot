@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ReviewList = ({
-  reviews,
+  // reviews,
   title,
   showTitle = true,
   showUsername = true,
+  reviews = []
 }) => {
   if (!reviews.length) {
     return <h3></h3>;
@@ -48,7 +49,7 @@ const ReviewList = ({
           </div>
         ))}
     </div>
-  );
+    );
 };
 
 export default ReviewList;
