@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
+import { ADD_REVIEW} from '../../utils/mutations';
 
-import { ADD_REVIEW } from '../../utils/mutations';
 import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
 
 import './ReviewForm.css';
@@ -35,6 +35,8 @@ const ReviewForm = () => {
     },
   });
 
+
+
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
@@ -45,12 +47,12 @@ const ReviewForm = () => {
           reviewAuthor: Auth.getProfile().data.username,
         },
       });
-
       setReviewText('');
     } catch (err) {
       console.error(err);
     }
   };
+
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -71,7 +73,7 @@ const ReviewForm = () => {
             className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
               }`}
           >
-            Character Count: {characterCount}/280
+            Character Count: {characterCount}/280 
           </p>
           <form
             className="flex-row justify-center justify-space-between-md align-center"
