@@ -89,7 +89,7 @@ const ReviewForm = () => {
             </div>
 
             <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3 add-review-btn" type="submit" style={{border : 'blue' , backgroundColor: 'green'}}>
+              <button className="button button-primary button-block py-3 add-review-button button-squared" type="submit">
                 Add review
               </button>
             </div>

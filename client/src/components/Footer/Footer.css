@@ -15,3 +15,11 @@
     font-size: 18px;
     color: #ffffff;
 }
+
+a {
+    color: lightgreen;
+}
+
+a:hover {
+    color: #006400;
+}

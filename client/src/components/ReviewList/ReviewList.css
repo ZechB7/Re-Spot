@@ -39,12 +39,12 @@
   
 
 .card {
-    color: orange;
+    color: lightgreen;
     background-color: #1a1a1a;
 }
 
 .card-body {
-    color: hotpink;
+    color: #ffffff;
     background-color: #1a1a1a;
 }
 
