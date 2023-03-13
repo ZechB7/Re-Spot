@@ -6,9 +6,9 @@ import { useQuery } from '@apollo/client';
 
 import CommentList from '../components/CommentList';
 import CommentForm from '../components/CommentForm';
+import ReviewList from '../components/ReviewList';
 
 import { QUERY_SINGLE_REVIEW } from '../utils/queries';
-
 const SingleReview = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
   const { reviewId } = useParams();
@@ -26,9 +26,9 @@ const SingleReview = () => {
   return (
     <div className="my-3">
       <h3 className="card-header bg-dark text-light p-2 m-0">
-        {review.reviewAuthor} <br />
+        <ReviewList reviewAuthor ={review.reviewAuthor} /><br />
         <span style={{ fontSize: '1rem' }}>
-          had this review on {review.createdAt}
+          had this review on <CommentList created={review.createdAt} />
         </span>
       </h3>
       <div className="bg-light py-4">
@@ -41,7 +41,7 @@ const SingleReview = () => {
             lineHeight: '1.5',
           }}
         >
-          {review.reviewText}
+          <ReviewList comments={reviews} />
         </blockquote>
       </div>
 
