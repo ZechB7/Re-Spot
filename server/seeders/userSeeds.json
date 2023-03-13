@@ -17,5 +17,11 @@
     "spotUser": "joshcbarrett3",
     "email": "josh@dumdum.edu",
     "password": "password06"
+  },
+  {
+    "username": "Nick",
+    "spotUser": "nmunreal", 
+    "email": "nick@fakemail.com",
+    "password": "asdf1234"
   }
 ]
