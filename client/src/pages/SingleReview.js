@@ -26,9 +26,9 @@ const SingleReview = () => {
   return (
     <div className="my-3">
       <h3 className="card-header bg-dark text-light p-2 m-0">
-        <ReviewList reviewAuthor ={review.reviewAuthor} /><br />
+        {review.reviewAuthor} <br />
         <span style={{ fontSize: '1rem' }}>
-          had this review on <CommentList created={review.createdAt} />
+          had this review on {review.createdAt} 
         </span>
       </h3>
       <div className="bg-light py-4">
@@ -41,7 +41,7 @@ const SingleReview = () => {
             lineHeight: '1.5',
           }}
         >
-          <ReviewList comments={reviews} />
+          {reviews}
         </blockquote>
       </div>
 
