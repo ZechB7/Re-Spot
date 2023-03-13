@@ -45,7 +45,7 @@ const Profile = () => {
 
 
         {/* map here */}
-        <p>link to comment on this playlist</p>
+        <p style={{ color: '#ffff' }}>link to comment on this playlist</p>
 
         <div className="col-12 col-md-10 mb-5">
           <ReviewList
