@@ -15,7 +15,7 @@ const ReviewList = ({
 
   return (
     <div className="reviewList">
-      {showTitle && <h3>{title}</h3>}
+      {showTitle && <h3 className="penny">{title}</h3>}
       {reviews &&
         reviews.map((review) => (
           <div key={review._id} className="card mb-3">
@@ -38,11 +38,11 @@ const ReviewList = ({
                 </>
               )}
             </h4>
-            <div className="card-body bg-light p-2">
+            <div className="card-body p-2">
               <p>{review.reviewText}</p>
             </div>
             <Link
-              className="btn btn-primary btn-block btn-squared"
+              className="button button-primary button-block button-squared"
               to={`/reviews/${review._id}`}
             >
               Join the discussion on this review.
