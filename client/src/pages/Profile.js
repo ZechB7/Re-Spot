@@ -4,12 +4,14 @@ import { useQuery } from '@apollo/client';
 
 import ReviewForm from '../components/ReviewForm';
 import ReviewList from '../components/ReviewList';
+import UserPlayList from '../components/UserPlayList'
 
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 
 import Auth from '../utils/auth';
 
 const Profile = () => {
+
   const { username: userParam } = useParams();
 
   const { loading, data } = useQuery(userParam ? QUERY_USER : QUERY_ME, {
@@ -34,7 +36,7 @@ const Profile = () => {
       </h4>
     );
   }
-  //fetch here
+
 
   return (
     <div>
@@ -44,8 +46,11 @@ const Profile = () => {
         </h2>
 
 
-        {/* map here */}
-        <p style={{ color: '#ffff' }}>link to comment on this playlist</p>
+        <div>
+        <UserPlayList
+          spotUser = {user.spotUser}
+        />
+        </div>
 
         <div className="col-12 col-md-10 mb-5">
           <ReviewList
@@ -58,7 +63,8 @@ const Profile = () => {
         {!userParam && (
           <div
             className="col-12 col-md-10 mb-3 p-3"
-            style={{}}
+            style={{ border: '1px dotted #1a1a1a' }}
+
           >
             <ReviewForm />
           </div>
