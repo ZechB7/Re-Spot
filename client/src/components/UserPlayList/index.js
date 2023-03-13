@@ -5,7 +5,7 @@ import ReviewForm from '../ReviewForm';
 import API from '../../utils/API';
 // import axios from 'axios';
 
-const UserPlayList = ({spotUser}) => {
+const UserPlayList = ({ spotUser }) => {
 
   const [result, setResult] = useState({});
   // const [search, setSearch] = useState('');
@@ -24,19 +24,21 @@ const UserPlayList = ({spotUser}) => {
     searchUser(spotUser);
   }, []);
 
-  const {public_playlists:playlists} = result;
+  const { public_playlists: playlists } = result;
 
 
-  return (   
+  return (
     <div>
       {
         (playlists?.length && spotUser) ? <div>
-        {playlists.map( (playList) => (<div><iframe key={playList.uri.replace('spotify:playlist:','')} src={`https://open.spotify.com/embed/playlist/${playList.uri.replace('spotify:playlist:','')}?utm_source=generator`} allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        <ReviewForm reviewId={playList.uri} />
-        
-        </div>
-        ))}
-        </div>  : (<h3>No playlist</h3>)
+          {playlists.map((playList) => (<div id="embed-iframe">
+            <iframe key={playList.uri.replace('spotify:playlist:', '')} src={`https://open.spotify.com/embed/playlist/${playList.uri.replace('spotify:playlist:', '')}?utm_source=generator`} width="150%" height="250" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+            <ReviewForm reviewId={playList.uri} />
+
+          </div>
+          ))}
+        </div> : (<h3>No playlist</h3>)
       }
     </div>
   );
