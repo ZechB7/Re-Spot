@@ -1,5 +1,9 @@
 /* .btn-primary {
 
+.button-add-review:hover{
+    color: black;
+    background-color: rgb(0, 255, 0);
+    border-color: lightgreen;
 }
 
 .form-input {

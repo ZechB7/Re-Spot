@@ -12,6 +12,8 @@ import Auth from '../../utils/auth';
 import './ReviewForm.css';
 
 const ReviewForm = () => {
+  console.log({reviewId: prop?.reviewId})
+
   const [reviewText, setReviewText] = useState('');
 
   const [characterCount, setCharacterCount] = useState(0);
