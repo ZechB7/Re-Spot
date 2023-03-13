@@ -75,6 +75,7 @@ These are some of our purposed additions:
 - Holden Claus [Github](https://github.com/HoldyClaus)
 
 ## Secondary Collaborators
-- 
-- 
-- 
+- Ian 
+- Diem Ly
+- Leah Nelson
+- Sean Roshan

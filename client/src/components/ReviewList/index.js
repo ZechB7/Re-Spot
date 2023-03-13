@@ -10,7 +10,7 @@ const ReviewList = ({
   showUsername = true,
 }) => {
   if (!reviews.length) {
-    return <h3>No reviews Yet</h3>;
+    return <h3></h3>;
   }
 
   return (
