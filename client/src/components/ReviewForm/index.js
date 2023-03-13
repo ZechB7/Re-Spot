@@ -26,6 +26,10 @@ const ReviewForm = () => {
       } catch (e) {
         console.error(e);
       }
+      cache.writeQuery({
+        query: QUERY_ME,
+        data: { me: addReview },
+      });
     },
   });
 

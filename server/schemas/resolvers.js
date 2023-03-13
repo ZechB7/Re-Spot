@@ -97,6 +97,7 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+    
     removeComment: async (parent, { reviewId, commentId }, context) => {
       if (context.user) {
         return Review.findOneAndUpdate(
