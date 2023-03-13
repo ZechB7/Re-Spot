@@ -6,9 +6,9 @@ import { useQuery } from '@apollo/client';
 
 import CommentList from '../components/CommentList';
 import CommentForm from '../components/CommentForm';
+import ReviewList from '../components/ReviewList';
 
 import { QUERY_SINGLE_REVIEW } from '../utils/queries';
-
 const SingleReview = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
   const { reviewId } = useParams();
@@ -37,11 +37,10 @@ const SingleReview = () => {
           style={{
             fontSize: '1.5rem',
             fontStyle: 'italic',
-            border: '2px dotted #1a1a1a',
             lineHeight: '1.5',
           }}
         >
-          {review.reviewText}
+          <p>{review.reviewText}</p>
         </blockquote>
       </div>
 
