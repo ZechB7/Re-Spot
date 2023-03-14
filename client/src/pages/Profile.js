@@ -37,6 +37,20 @@ const Profile = () => {
     );
   }
 
+        <mapOverEachPlaylistInUser>
+          <p>link to comment on this playlist</p>
+          <iframe 
+            src="https://open.spotify.com/embed/playlist/37i9dQZF1EIcVkEtbzdTRx?utm_source=generator" 
+            width="752" 
+            height="500" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy"
+            title="playlist"
+          >
+          </iframe>
+        </mapOverEachPlaylistInUser>
+
+        // <div className="col-12 col-md-10 mb-5">
 
   return (
     <div>

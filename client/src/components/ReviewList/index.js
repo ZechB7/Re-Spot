@@ -8,6 +8,8 @@ import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
 
 
 
+import './ReviewList.css';
+
 const ReviewList = ({
   // reviews,
   title,
@@ -81,15 +83,15 @@ const ReviewList = ({
   }
 
   return (
-    <div>
-      {showTitle && <h3>{title}</h3>}
+    <div className="reviewList">
+      {showTitle && <h3 className="penny">{title}</h3>}
       {reviews &&
         reviews.map((review) => (
           <div key={review._id} className="card mb-3">
-            <h4 className="card-header bg-primary text-light p-2 m-0">
+            <h4 className="p-2 m-0">
               {showUsername ? (
                 <Link
-                  className="text-light"
+                  className="link"
                   to={`/profiles/${review.reviewAuthor}`}
                 >
                   {review.reviewAuthor} <br />
@@ -105,7 +107,7 @@ const ReviewList = ({
                 </>
               )}
             </h4>
-            <div className="card-body bg-light p-2">
+            <div className="card-body p-2">
               {/* <input >{review.reviewText}</input> */}
               <input
             // placeholder="Add your profile name..."
@@ -115,7 +117,7 @@ const ReviewList = ({
           />
             </div>
             <Link
-              className="btn btn-primary btn-block btn-squared"
+              className="button button-primary button-block button-squared"
               to={`/reviews/${review._id}`}
             >
               Join the discussion on this review.
