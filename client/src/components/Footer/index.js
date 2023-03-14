@@ -6,7 +6,7 @@ import './Footer.css';
     color: '#ffffff'
   };
   const linkStyle = {
-    color: '#006400',
+    color: '#008000',
     textDecoration: 'none'
   };
 

@@ -3,6 +3,10 @@ h3 {
   font-family: Courier New, Monospace;
 }
 
+div {
+  justify-items: center !important;
+}
+
 .btn.btn-block {
   width: 100%;
   display: block;
@@ -16,23 +20,19 @@ h3 {
   margin: 0;
   text-decoration: none;
   font-size: 18px;
-  border-radius: 0.3rem;
-  border: 1px solid transparent;
+  border-radius: 0 0 .3rem .3rem !important;
+  border: none;
   outline: none;
   color: black;
   background-color: green;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-.button.button-squared {
-  border-radius: .3rem;
-}
-
 .button.button-block {
-  width: 75%;
+  width: 100%;
   display: block;
   text-align: center;
-  margin-left: 13%;
+  margin: 0;
 }
 
 .button.button-primary {
@@ -48,19 +48,14 @@ h3 {
   text-decoration: none;
 }
 
-/* .review-form button:hover {
-  color: black;
-}
-  
-.review-form .text-danger {
-  color: yellow !important;
-} */
-
-/* .login:active {
-  color: red;
-} */
-
 .review-form .form-input {
-  height: 8rem;
+  width: 100%;
+  padding: 0.75rem;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  margin: 0;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.3rem 0.3rem 0 0;
 }
 

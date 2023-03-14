@@ -16,11 +16,6 @@
     color: #ffffff;
 }
 
-a {
-    color: #90ee90;
-    text-decoration: none;
-}
-
 a:hover {
     color: #90ee90 !important;
     text-decoration: none;
