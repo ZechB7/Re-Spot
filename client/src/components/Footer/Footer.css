@@ -17,11 +17,12 @@
 }
 
 a {
-    color: lightgreen;
+    color: #90ee90;
     text-decoration: none;
 }
 
 a:hover {
-    color: #006400;
+    color: #90ee90 !important;
     text-decoration: none;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out !important;
 }

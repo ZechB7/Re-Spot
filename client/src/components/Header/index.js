@@ -14,7 +14,7 @@ const Header = () => {
     <header className="bg-black mb-4 py-3 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <div>
-          <Link className="" to="/" style={{ color: 'green' }}>
+          <Link className="" to="/" style={{ color: 'green', textDecoration: 'none' }}>
             <h1 className="m-0 text-green header-title">Spotify Playlist Review</h1>
           </Link>
           <p className="m-0 text-white header-subtitle">Discuss your peers playlist.</p>
