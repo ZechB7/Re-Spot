@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useMutation } from '@apollo/client';
-import { ADD_REVIEW} from '../../utils/mutations';
+import { ADD_REVIEW } from '../../utils/mutations';
 
 import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
 
@@ -10,7 +10,7 @@ import Auth from '../../utils/auth';
 import './ReviewForm.css';
 
 const ReviewForm = () => {
-  console.log({reviewId: prop?.reviewId})
+  //console.log({reviewId: prop?.reviewId})
 
   const [reviewText, setReviewText] = useState('');
 
@@ -73,7 +73,7 @@ const ReviewForm = () => {
             className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
               }`}
           >
-            Character Count: {characterCount}/280 
+            Character Count: {characterCount}/280
           </p>
           <form
             className="flex-row justify-center justify-space-between-md align-center"
@@ -91,7 +91,7 @@ const ReviewForm = () => {
             </div>
 
             <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3 add-review-btn" type="submit" style={{border : 'blue' , backgroundColor: 'green'}}>
+              <button className="btn btn-primary btn-block py-3 add-review-btn" type="submit" style={{ border: 'blue', backgroundColor: 'green' }}>
                 Add review
               </button>
             </div>
@@ -105,11 +105,11 @@ const ReviewForm = () => {
       ) : (
         <p>
           You need to be logged in to share your review. Please{' '}
-          <Link to="/login" style={{ color: 'lightgreen'}}>login</Link>
-          
+          <Link to="/login" style={{ color: 'lightgreen' }}>login</Link>
+
           {' '}or{' '}
-          
-          <Link to="/signup" style={{ color: 'lightgreen'}}>signup.</Link>
+
+          <Link to="/signup" style={{ color: 'lightgreen' }}>signup.</Link>
         </p>
       )}
     </div>
