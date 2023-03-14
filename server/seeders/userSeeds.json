@@ -23,5 +23,11 @@
     "spotUser": "nmunreal", 
     "email": "nick@fakemail.com",
     "password": "asdf1234"
+  },
+  {
+    "username": "Ruby",
+    "spotUser": "RoobyDoobster",
+    "email": "123@123.com",
+    "password": "123456789"
   }
 ]
