@@ -16,7 +16,6 @@ const ReviewList = ({
   reviews = []
 }) => {
 
-
   const [removeReview] = useMutation(REMOVE_REVIEW, {
     update(cache, { data: { removeReview } }) {
       try {
@@ -106,4 +105,4 @@ const ReviewList = ({
     );
 };
 
-export default ReviewList;
+export default ReviewList; 

@@ -32,7 +32,7 @@ const UserPlayList = ({ spotUser }) => {
       {
         (playlists?.length && spotUser) ? <div>
           {playlists.map((playList) => (<div id="embed-iframe">
-            <iframe key={playList.uri.replace('spotify:playlist:', '')} src={`https://open.spotify.com/embed/playlist/${playList.uri.replace('spotify:playlist:', '')}?utm_source=generator`} width="150%" height="250" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe key={playList.uri.replace('spotify:playlist:', '')} src={`https://open.spotify.com/embed/playlist/${playList.uri.replace('spotify:playlist:', '')}?utm_source=generator`} width="100%" height="250" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
             <ReviewForm reviewId={playList.uri} />
 
