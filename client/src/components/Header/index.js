@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Auth from '../../utils/auth';
-
+import SearchBar from '../SearchBar';
 import './Header.css'; // import the stylesheet
 
 const Header = () => {
@@ -19,26 +19,28 @@ const Header = () => {
           </Link>
           <p className="m-0 text-white header-subtitle">Discuss your peers playlist.</p>
         </div>
+
         <div>
-        {Auth.loggedIn() ? (
-        <>
-        <Link className="btn btn-lg m-2" to="/me">
-          {Auth.getProfile().data.username}'s profile
-          </Link>
-          <button className="btn btn-lg m-2" onClick={logout}>
-            Logout
-            </button>
-            </>)
-             : (
-             <>
-             <Link className="btn btn-lg m-2" to="/login">
-              Login
+          {Auth.loggedIn() ? (
+            <>
+              <SearchBar />
+              <Link className="btn btn-lg m-2" to="/me">
+                {Auth.getProfile().data.username}'s profile
               </Link>
-              <Link className="btn btn-lg m-2" to="/signup">
-                Signup
+              <button className="btn styled-button btn-lg m-2" onClick={logout}>
+                Logout
+              </button>
+            </>)
+            : (
+              <>
+                <Link className="btn styled-button btn-lg m-2" to="/login">
+                  Login
                 </Link>
-                </>
-              )}
+                <Link className="btn styled-button btn-lg m-2" to="/signup">
+                  Signup
+                </Link>
+              </>
+            )}
         </div>
       </div>
     </header>
