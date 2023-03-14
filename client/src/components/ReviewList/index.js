@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from'reactstrap';
-import {REMOVE_REVIEW } from '../../utils/mutations';
+import {REMOVE_REVIEW, UPDATE_REVIEW } from '../../utils/mutations';
 import { useMutation } from '@apollo/client';
 
 import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
@@ -15,7 +15,8 @@ const ReviewList = ({
   showUsername = true,
   reviews = []
 }) => {
-
+  const [reviewData, setName] = useState('');
+  const [updateReview, {error}] = useMutation(UPDATE_REVIEW);
 
   const [removeReview] = useMutation(REMOVE_REVIEW, {
     update(cache, { data: { removeReview } }) {
@@ -63,6 +64,22 @@ const ReviewList = ({
     return <h3></h3>;
   }
 
+  const handleUpdateReview = async (reviewId, reviewText) => {
+    try {
+      // console.log(`handleRemoveReview clicked! ${reviewId}`);
+      const { data } = await updateReview({
+        variables: {
+          reviewText,
+          reviewId,
+
+        },
+      })
+   
+    } catch (err) {
+      console.error(err)
+    }
+  }
+
   return (
     <div>
       {showTitle && <h3>{title}</h3>}
@@ -89,7 +106,13 @@ const ReviewList = ({
               )}
             </h4>
             <div className="card-body bg-light p-2">
-              <p>{review.reviewText}</p>
+              {/* <input >{review.reviewText}</input> */}
+              <input
+            // placeholder="Add your profile name..."
+            value={reviewData}
+            className="form-input w-100"
+            onChange={(event) => setName(event.target.value)}
+          />
             </div>
             <Link
               className="btn btn-primary btn-block btn-squared"
@@ -97,6 +120,9 @@ const ReviewList = ({
             >
               Join the discussion on this review.
             </Link>
+            <Button color="primary" onClick={() => handleUpdateReview(review._id)}>
+              {/* Update Review, review id and review text */} Update Review
+            </Button>
             <Button color="primary" onClick={()=>handleRemoveReview(review._id)}>
               Remove Review
             </Button>
