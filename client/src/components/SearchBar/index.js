@@ -16,12 +16,6 @@ const SearchBar = () => {
             placeholder="Search Username"
             onChange={(event) => setSearchInput(event.target.value)}
             value={searchInput} />
-        <button
-            onClick={() => window.location.replace("/profiles/" + searchInput)}
-            className="searchBar"
-            >
-            Search
-        </button>
     </div>)
 
 };

@@ -14,14 +14,14 @@
     font-size: 18px !important;
   }
 
-  .styled-button {
-    color: black;
-    background-color: green;
-    border-color: green;
+  .btn {
+    color: black !important;
+    background-color: green !important;
+    border-color: green !important;
   }
   
-  .styled-button:hover {
-    color: black;
-    background-color: rgb(0, 255, 0);
-    border-color: lightgreen;
+  .btn:hover {
+    color: black !important;
+    background-color: rgb(0, 255, 0) !important;
+    border-color: lightgreen !important;
   }

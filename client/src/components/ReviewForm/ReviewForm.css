@@ -7,6 +7,10 @@ div {
   justify-items: center !important;
 }
 
+.review-card {
+  width:100%;
+}
+
 .btn.btn-block {
   width: 100%;
   display: block;

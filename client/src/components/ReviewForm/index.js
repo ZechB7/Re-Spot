@@ -79,7 +79,7 @@ const ReviewForm = () => {
             className="flex-row justify-center justify-space-between-md align-center"
             onSubmit={handleFormSubmit}
           >
-            <div className="col-12 col-lg-9">
+            <div className="review-card col-12 col-lg-9">
               <textarea
                 name="reviewText"
                 placeholder="Here's a new review..."

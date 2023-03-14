@@ -19,24 +19,23 @@ const Header = () => {
           </Link>
           <p className="m-0 text-white header-subtitle">Discuss your peers playlist.</p>
         </div>
-
+          <SearchBar />
         <div>
           {Auth.loggedIn() ? (
             <>
-              <SearchBar />
               <Link className="btn btn-lg m-2" to="/me">
                 {Auth.getProfile().data.username}'s profile
               </Link>
-              <button className="btn styled-button btn-lg m-2" onClick={logout}>
+              <button className="btn btn-lg m-2" onClick={logout}>
                 Logout
               </button>
             </>)
             : (
               <>
-                <Link className="btn styled-button btn-lg m-2" to="/login">
+                <Link className="btn btn-lg m-2" to="/login">
                   Login
                 </Link>
-                <Link className="btn styled-button btn-lg m-2" to="/signup">
+                <Link className="btn btn-lg m-2" to="/signup">
                   Signup
                 </Link>
               </>
