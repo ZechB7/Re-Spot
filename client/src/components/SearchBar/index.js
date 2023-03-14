@@ -7,10 +7,13 @@ const SearchBar = () => {
     return (<div>
         <input
             type="search"
-            placeholder="Search For Re-Spot User"
+            placeholder="Search Username"
             onChange={(event) => setSearchInput(event.target.value)}
             value={searchInput} />
-        <button onClick={() => window.location.replace("/profiles/" + searchInput)}>
+        <button
+            onClick={() => window.location.replace("/profiles/" + searchInput)}
+            style={{ backgroundColor: 'forestgreen', color: 'black', borderColor: 'forestgreen' }}
+        >
             Search
         </button>
     </div>)
