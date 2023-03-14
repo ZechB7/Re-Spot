@@ -2,7 +2,7 @@ import axios from 'axios';
 
 // 
 const search = async (spotUser) => {
-     return axios({
+    return axios({
         method: 'GET',
         url: 'https://spotify23.p.rapidapi.com/user_profile/',
         headers: {
