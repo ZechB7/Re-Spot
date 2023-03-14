@@ -41,7 +41,7 @@ const CommentForm = ({ reviewId }) => {
   };
 
   return (
-    <div className="ughhh">
+    <div className="commentForm">
       <h4>What do you think about this?</h4>
 
       {Auth.loggedIn() ? (
