@@ -13,9 +13,15 @@ const SearchBar = () => {
         <input
             className="searchBar"
             type="search"
-            placeholder="Search For Re-Spot User"
+            placeholder="Search Username"
             onChange={(event) => setSearchInput(event.target.value)}
             value={searchInput} />
+        <button
+            onClick={() => window.location.replace("/profiles/" + searchInput)}
+            className="searchBar"
+            >
+            Search
+        </button>
     </div>)
 
 };
