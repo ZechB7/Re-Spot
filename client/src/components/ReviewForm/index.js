@@ -35,8 +35,6 @@ const ReviewForm = () => {
     },
   });
 
-
-
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
