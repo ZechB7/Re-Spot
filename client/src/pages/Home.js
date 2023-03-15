@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useQuery } from '@apollo/client';
 
 import ReviewList from '../components/ReviewList';
-import ReviewForm from '../components/ReviewForm';
 
 import { QUERY_REVIEWS } from '../utils/queries';
 
@@ -23,14 +22,14 @@ const Home = () => {
   }
 
   return (
-    <main style={{ backgroundColor: '#778899', color: '#000000' }}>
-      <div className="flex-row justify-center">
-        <div
-          className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #000000' }}
-        >
-          <ReviewForm />
-        </div>
+    
+    <main style={{backgroundColor: '#778899',  color: '#000000' }}>
+      <div className="image">
+      {/* searchUsernameBox */}
+      <div className="col-8 col-md-9 mb-1">
+        <h7 style={{fontSize:"18px",marginLeft:"25%", color:"white"}}>Type in the search bar below to comment on each others playlists</h7>
+      </div>
+      <div className="flex-row justify-center">      
         <div className="col-12 col-md-8 mb-3">
           <div className="col-12 col-md-8 mb-3">
             <div className="input-group" style={{ width: '150%' }}>
@@ -62,6 +61,104 @@ const Home = () => {
               title="A penny for your review(s)..."
             />
           )}
+        </div>
+      </div>
+      {/* body section */}
+        <div className="please">
+          <div className="suggestions">
+
+            <a href="https://open.spotify.com/genre/podcasts-web">
+              <div className="test" >
+                <h7>Podcasts</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFETqK4t8f1n3">
+              <div className="test">
+                <h7>Audiobooks</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/concerts">
+              <div className="test">
+                <h7>Live Events</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/">
+              <div className="test">
+                <h7>Made For You</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/new-releases-page">
+              <div className="test">
+                <h7>New Releases</h7>
+              </div>
+            </a>
+          </div>
+
+          <div className="genres">
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFQ00XGBls6ym">
+              <div className="test">
+                <h7>Hip-Hop</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFKLfwjuJMoNC">
+              <div className="test">
+                <h7>Country</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFxXaXKP7zcDp">
+              <div className="test">
+                <h7>Latin</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFDXXwE9BDJAr">
+              <div className="test">
+                <h7>Rock</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFHOzuVTgTizF">
+              <div className="test">
+                <h7>Electronic</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFEZPnFQSFB1T">
+              <div className="test">
+                <h7>R&B</h7>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFCWjUTdzaG0e">
+              <div className="test">
+                <h7>Indie</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFDkd668ypn6O">
+              <div className="test">
+                <h7>Metal</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFAJ5xb0fwo9m">
+              <div className="test">
+                <h7>Jazz</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFPrEiAOxgac3">
+              <div className="test">
+                <h7>Classical</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFFtlLYUHv8bT">
+              <div className="test">
+                <h7>Alternative</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFQiK2EHwyjcU">
+              <div className="test">
+                <h7>Blues</h7>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </main>

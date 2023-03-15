@@ -15,6 +15,7 @@ import Playlist from './pages/Playlist';
 import Profile from './pages/Profile';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import EditReviewPage from './pages/EditReview';
 
 // Construct our main GraphQL API endpoint
 const httpLink = createHttpLink({
@@ -63,6 +64,10 @@ function App() {
               <Route
                 path="/me"
                 element={<Profile />}
+              />
+              <Route
+                path="/EditReviewPage/:reviewId"
+                element={<EditReviewPage />}
               />
               <Route
                 path="/profiles/:username"
