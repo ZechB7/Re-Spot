@@ -37,7 +37,7 @@ button:focus {
 
 .please {
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 450px 400px 400px;
   grid-gap: 10px;
 
   
@@ -69,10 +69,13 @@ button:focus {
   -ms-user-select: none; 
   animation-name: change;
   animation-duration: 8s;
-  opacity: 90%;
+  opacity: 85%;
   width: 105%;
 }
-
+a {
+  text-decoration: none !important;
+  
+}
 
 @keyframes change {
   from {background-color: green;}

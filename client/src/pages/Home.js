@@ -64,65 +64,102 @@ const Home = () => {
         </div>
       </div>
       {/* body section */}
-      <div className="please">
-        <div className="suggestions">
-          <div className="test">
-            <h7>Podcasts</h7>
+        <div className="please">
+          <div className="suggestions">
+
+            <a href="https://open.spotify.com/genre/podcasts-web">
+              <div className="test" >
+                <h7>Podcasts</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFETqK4t8f1n3">
+              <div className="test">
+                <h7>Audiobooks</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/concerts">
+              <div className="test">
+                <h7>Live Events</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/">
+              <div className="test">
+                <h7>Made For You</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/new-releases-page">
+              <div className="test">
+                <h7>New Releases</h7>
+              </div>
+            </a>
           </div>
-          <div className="test">
-            <h7>Audiobooks</h7>
+
+          <div className="genres">
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFQ00XGBls6ym">
+              <div className="test">
+                <h7>Hip-Hop</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFKLfwjuJMoNC">
+              <div className="test">
+                <h7>Country</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFxXaXKP7zcDp">
+              <div className="test">
+                <h7>Latin</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFDXXwE9BDJAr">
+              <div className="test">
+                <h7>Rock</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFHOzuVTgTizF">
+              <div className="test">
+                <h7>Electronic</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFEZPnFQSFB1T">
+              <div className="test">
+                <h7>R&B</h7>
+              </div>
+            </a>
           </div>
-          <div className="test">
-            <h7>Live Events</h7>
-          </div>
-          <div className="test">
-            <h7>Made For You</h7>
-          </div>
-          <div className="test">
-            <h7>New Releases</h7>
+
+          <div>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFCWjUTdzaG0e">
+              <div className="test">
+                <h7>Indie</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFDkd668ypn6O">
+              <div className="test">
+                <h7>Metal</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFAJ5xb0fwo9m">
+              <div className="test">
+                <h7>Jazz</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFPrEiAOxgac3">
+              <div className="test">
+                <h7>Classical</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFFtlLYUHv8bT">
+              <div className="test">
+                <h7>Alternative</h7>
+              </div>
+            </a>
+            <a href="https://open.spotify.com/genre/0JQ5DAqbMKFQiK2EHwyjcU">
+              <div className="test">
+                <h7>Blues</h7>
+              </div>
+            </a>
           </div>
         </div>
-        <div className="genres">
-          <div className="test">
-            <h7>Hip-Hop</h7>
-          </div>
-          <div className="test">
-            <h7>Country</h7>
-          </div>
-          <div className="test">
-            <h7>Latin</h7>
-          </div>
-          <div className="test">
-            <h7>Rock</h7>
-          </div>
-          <div className="test">
-            <h7>Electronic</h7>
-          </div>
-          <div className="test">
-            <h7>R&B</h7>
-          </div>
-          </div>
-          <div>
-          <div className="test">
-            <h7>Indie</h7>
-          </div>
-          <div className="test">
-            <h7>Metal</h7>
-          </div>
-          <div className="test">
-            <h7>Jazz</h7>
-          </div>
-          <div className="test">
-            <h7>Classical</h7>
-          </div>
-          <div className="test">
-            <h7>Alternative</h7>
-          </div>
-          <div className="test">
-            <h7>Blues</h7>
-          </div>
-          </div>
-      </div>
       </div>
     </main>
   );
