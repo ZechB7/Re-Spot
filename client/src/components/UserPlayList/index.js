@@ -31,7 +31,10 @@ const UserPlayList = ({ spotUser }) => {
             <iframe 
             key={playList.uri.replace('spotify:playlist:', '')} 
             src={`https://open.spotify.com/embed/playlist/${playList.uri.replace('spotify:playlist:', '')}?utm_source=generator`} 
-            width="100%" height="250" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            width="752" 
+            height="500" 
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+            loading="lazy">
             </iframe>
 
             <Link

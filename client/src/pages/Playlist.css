@@ -1,0 +1,10 @@
+.playlistCard {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+}
+
+.playlist {
+    justify-content: center;
+}
