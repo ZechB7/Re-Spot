@@ -27,30 +27,30 @@ button:focus {
   align-items: center;
 }
 
-.applications {
+.please {
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-gap: 10px;
   
   
 }
-.genrespt1:hover {
+.test:hover {
   background-color: green;
   animation-name: hovering;
-  animation-duration: 1s
+  animation-duration: .3s
 
 }
 
 @keyframes hovering {
   from{width:100%}
-  to{width:90%}
+  to{width:95%}
 }
 
 .test {
   background-color: #444;
   color: #fff;
   border-radius: 5px;
-  padding: 20px;
+  padding: 50px;
   font-size: 150%;
   margin-bottom: 30px;
   text-align: center;

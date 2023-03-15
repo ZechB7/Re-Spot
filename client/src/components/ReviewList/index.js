@@ -59,21 +59,21 @@ const ReviewList = ({
     return <h3></h3>;
   }
 
-  const handleUpdateReview = async (reviewId, reviewText) => {
-    try {
-      // console.log(`handleRemoveReview clicked! ${reviewId}`);
-      const { data } = await updateReview({
-        variables: {
-          reviewText,
-          reviewId,
+  // const handleUpdateReview = async (reviewId, reviewText) => {
+  //   try {
+  //     // console.log(`handleRemoveReview clicked! ${reviewId}`);
+  //     const { data } = await updateReview({
+  //       variables: {
+  //         reviewText,
+  //         reviewId,
 
-        },
-      })
+  //       },
+  //     })
    
-    } catch (err) {
-      console.error(err)
-    }
-  }
+  //   } catch (err) {
+  //     console.error(err)
+  //   }
+  // }
 
   return (
     <div className="reviewList">
