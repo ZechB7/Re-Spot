@@ -1,15 +1,18 @@
-/* .btn-primary {
 
-.button-add-review:hover{
-    color: black;
-    background-color: rgb(0, 255, 0);
-    border-color: lightgreen;
+.btn {
+color: black !important;
+background-color: green !important;
+border-color: green !important;
 }
 
-.form-input {
+.btn:hover {
+color: black !important;
+background-color: rgb(0, 255, 0) !important;
+border-color: lightgreen !important;
+}
 
-} */
- 
-.ughhh {
-    background-color: blue;
+
+.commentForm {
+background-color: black;
+color: white;
 }
