@@ -37,7 +37,7 @@ button:focus {
 
 .please {
   display: grid;
-  grid-template-columns: 400px 400px 400px;
+  grid-template-columns: 450px 400px 400px;
   grid-gap: 10px;
 
   
