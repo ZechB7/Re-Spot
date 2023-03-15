@@ -74,7 +74,7 @@ function App() {
                 element={<Profile />}
               />
               <Route
-                path="/playlist/:playlistId"
+                path="/playlist/:uri"
                 element={<Playlist />}
               />
             </Routes>

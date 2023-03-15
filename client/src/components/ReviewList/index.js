@@ -4,15 +4,16 @@ import { Button } from 'reactstrap';
 import { REMOVE_REVIEW } from '../../utils/mutations';
 import { useMutation } from '@apollo/client';
 
-import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
+import { QUERY_REVIEWS, QUERY_ME, playlist } from '../../utils/queries';
 
 const ReviewList = ({
-  // reviews,
+  reviews,
   title,
   showTitle = true,
   showUsername = true,
-  reviews = []
+  // reviews = []
 }) => {
+
 
   const [removeReview] = useMutation(REMOVE_REVIEW, {
     update(cache, { data: { removeReview } }) {
@@ -55,8 +56,8 @@ const ReviewList = ({
     }
   };
 
-  if (!reviews.length) {
-    return <h3></h3>;
+  if (!reviews) {
+    return <h3>No reviews yet!</h3>;
   }
 
   const handleUpdateReview = async (reviewId) => {

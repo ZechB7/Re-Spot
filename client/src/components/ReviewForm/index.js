@@ -9,9 +9,8 @@ import './ReviewForm.css';
 
 import Auth from '../../utils/auth';
 
-const ReviewForm = () => {
+const ReviewForm = ({uri}) => {
   // //console.log({reviewId: prop?.reviewId})
-
   const [reviewText, setReviewText] = useState('');
 
   const [characterCount, setCharacterCount] = useState(0);
@@ -36,11 +35,13 @@ const ReviewForm = () => {
   });
 
   const handleFormSubmit = async (event) => {
+    console.log(uri);
     event.preventDefault();
 
     try {
       const { data } = await addReview({
         variables: {
+          uri:uri,
           reviewText,
           reviewAuthor: Auth.getProfile().data.username,
         },
