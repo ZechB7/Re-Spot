@@ -6,7 +6,7 @@ const search = async (spotUser) => {
         method: 'GET',
         url: 'https://spotify23.p.rapidapi.com/user_profile/',
         headers: {
-            'X-RapidAPI-Key': '',
+            'X-RapidAPI-Key': process.env.REACT_APP_RAPIDAPI_KEY,
             'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
         },
         params: {
