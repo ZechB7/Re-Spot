@@ -42,8 +42,8 @@ button:focus {
 }
 
 @keyframes hovering {
-  from{width:100%}
-  to{width:95%}
+  /* from{width:100%}
+  to{width:95%} */
 }
 
 .test {
