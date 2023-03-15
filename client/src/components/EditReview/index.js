@@ -10,8 +10,8 @@ import Auth from '../../utils/auth';
 
 const EditReview = () => {
     // //console.log({reviewId: prop?.reviewId})
-    const { id } = useParams();
-    console.log(id);
+    /* const { id } = useParams();
+     console.log(id);*/
 
     const [reviewText, setReviewText] = useState('');
 
