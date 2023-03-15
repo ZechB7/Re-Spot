@@ -70,6 +70,7 @@ button:focus {
   animation-name: change;
   animation-duration: 8s;
   opacity: 90%;
+  width: 105%;
 }
 
 
