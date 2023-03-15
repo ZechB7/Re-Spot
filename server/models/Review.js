@@ -11,7 +11,6 @@ const reviewSchema = new Schema({
   },
   uri: {
     type: String,
-    
   },
   reviewAuthor: {
     type: String,

@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Signup from './pages/Signup';
 import Login from './pages/Login';
-import SingleReview from './pages/SingleReview';
+import Playlist from './pages/Playlist';
 import Profile from './pages/Profile';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -69,8 +69,8 @@ function App() {
                 element={<Profile />}
               />
               <Route
-                path="/reviews/:reviewId"
-                element={<SingleReview />}
+                path="/playlist/:playlistId"
+                element={<Playlist />}
               />
             </Routes>
           </div>
