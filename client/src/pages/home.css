@@ -1,26 +1,70 @@
 body {
-    background-color: #778899;
-    color: #000000;
-  }
-  
-  input[type="text"], button {
-    background-color: #000000;
-    color: #778899;
-    border-color: #000000;
-  }
-  
-  input[type="text"]:focus, button:focus {
-    background-color: #778899;
-    color: #000000;
-    border-color: #000000;
-  }
+  background-color: #778899;
+  color: #000000;
+}
 
-  .button:hover{
-    background-color: rgb(0, 255, 0);
-  }
+input[type="text"],
+button {
+  background-color: #000000;
+  color: #778899;
+  border-color: #000000;
+}
 
-  .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+input[type="text"]:focus,
+button:focus {
+  background-color: #778899;
+  color: #000000;
+  border-color: #000000;
+}
+
+.button:hover {
+  background-color: rgb(0, 255, 0);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.please {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-gap: 10px;
+  
+  
+}
+.test:hover {
+  background-color: green;
+  animation-name: hovering;
+  animation-duration: .3s
+
+}
+
+@keyframes hovering {
+  /* from{width:100%}
+  to{width:95%} */
+}
+
+.test {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 50px;
+  font-size: 150%;
+  margin-bottom: 30px;
+  text-align: center;
+  -webkit-touch-callout: none; 
+  -webkit-user-select: none; 
+  -khtml-user-select: none; 
+  -moz-user-select: none; 
+  -ms-user-select: none; 
+  animation-name: change;
+  animation-duration: 8s;
+}
+
+
+@keyframes change {
+  from {background-color: green;}
+  to {background-color: #444;}
+}

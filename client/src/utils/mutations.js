@@ -71,3 +71,18 @@ export const REMOVE_REVIEW = gql`
     }
   }
 `;
+
+export const UPDATE_REVIEW = gql`
+  mutation updateReview($reviewId: ID!, $reviewText: String!) {
+    updateReview(reviewId: $reviewId, reviewText: $reviewText ) {
+      _id
+      reviewText
+      reviewAuthor
+      createdAt
+      comments {
+        _id
+        commentText
+        createdAt
+      }
+    }
+  }`

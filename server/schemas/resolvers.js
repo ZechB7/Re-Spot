@@ -121,8 +121,9 @@ const resolvers = {
     updateReview: async (parent, { reviewId, reviewText}, context) => {
       if (context.user) {
         const review = await Review.findOneAndUpdate(
-          { _id: reviewId, reviewAuthor: context.user.username},
-          {reviewText},
+          { _id: reviewId},
+          // { _id: reviewId, reviewAuthor: context.user.username},
+          {reviewText: reviewText},
           {new:true}
         )
         if(!review) {

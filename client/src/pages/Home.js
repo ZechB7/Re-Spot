@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useQuery } from '@apollo/client';
 
 import ReviewList from '../components/ReviewList';
-import ReviewForm from '../components/ReviewForm';
 
 import { QUERY_REVIEWS } from '../utils/queries';
 
@@ -23,14 +22,13 @@ const Home = () => {
   }
 
   return (
+    
     <main style={{ backgroundColor: '#778899', color: '#000000' }}>
-      <div className="flex-row justify-center">
-        <div
-          className="col-12 col-md-10 mb-3 p-3"
-          style={{ border: '1px dotted #000000' }}
-        >
-          <ReviewForm />
-        </div>
+      {/* searchUsernameBox */}
+      <div className="col-8 col-md-9 mb-1">
+        <h7 style={{fontSize:"20px",marginLeft:"25%"}}>Type in the search bar below to comment on each others playlists</h7>
+      </div>
+      <div className="flex-row justify-center">      
         <div className="col-12 col-md-8 mb-3">
           <div className="col-12 col-md-8 mb-3">
             <div className="input-group" style={{ width: '150%' }}>
@@ -63,6 +61,66 @@ const Home = () => {
             />
           )}
         </div>
+      </div>
+      {/* body section */}
+      <div className="please">
+        <div className="suggestions">
+          <div className="test">
+            <h7>Podcasts</h7>
+          </div>
+          <div className="test">
+            <h7>Audiobooks</h7>
+          </div>
+          <div className="test">
+            <h7>Live Events</h7>
+          </div>
+          <div className="test">
+            <h7>Made For You</h7>
+          </div>
+          <div className="test">
+            <h7>New Releases</h7>
+          </div>
+        </div>
+        <div className="genres">
+          <div className="test">
+            <h7>Hip-Hop</h7>
+          </div>
+          <div className="test">
+            <h7>Country</h7>
+          </div>
+          <div className="test">
+            <h7>Latin</h7>
+          </div>
+          <div className="test">
+            <h7>Rock</h7>
+          </div>
+          <div className="test">
+            <h7>Electronic</h7>
+          </div>
+          <div className="test">
+            <h7>R&B</h7>
+          </div>
+          </div>
+          <div>
+          <div className="test">
+            <h7>Indie</h7>
+          </div>
+          <div className="test">
+            <h7>Metal</h7>
+          </div>
+          <div className="test">
+            <h7>Jazz</h7>
+          </div>
+          <div className="test">
+            <h7>Classical</h7>
+          </div>
+          <div className="test">
+            <h7>Alternative</h7>
+          </div>
+          <div className="test">
+            <h7>Blues</h7>
+          </div>
+          </div>
       </div>
     </main>
   );
