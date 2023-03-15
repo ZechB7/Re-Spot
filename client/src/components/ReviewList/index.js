@@ -64,7 +64,7 @@ const ReviewList = ({
     //const {reviewId} = event.target;
     console.log(`handleUpdateReview clicked! ${reviewId}`);
     try {
-      window.location.replace("EditReviewPage/:" + reviewId);
+      window.location.replace("EditReviewPage/" + reviewId);
     }
     // setReviewText('');
     catch (err) {
