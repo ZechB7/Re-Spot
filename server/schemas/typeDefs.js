@@ -21,7 +21,7 @@ const typeDefs = gql`
     reviewText: String
     reviewAuthor: String
     createdAt: String
-    comments: [Comment]!
+    comments: [Comment]
   }
 
   type Comment {

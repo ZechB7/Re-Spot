@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import { REMOVE_REVIEW } from '../../utils/mutations';
@@ -58,6 +58,22 @@ const ReviewList = ({
   if (!reviews.length) {
     return <h3></h3>;
   }
+
+  // const handleUpdateReview = async (reviewId, reviewText) => {
+  //   try {
+  //     // console.log(`handleRemoveReview clicked! ${reviewId}`);
+  //     const { data } = await updateReview({
+  //       variables: {
+  //         reviewText,
+  //         reviewId,
+
+  //       },
+  //     })
+   
+  //   } catch (err) {
+  //     console.error(err)
+  //   }
+  // }
 
   return (
     <div className="reviewList">
