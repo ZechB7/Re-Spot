@@ -5,9 +5,9 @@ import { ADD_REVIEW } from '../../utils/mutations';
 
 import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
 
-import Auth from '../../utils/auth';
-
 import './ReviewForm.css';
+
+import Auth from '../../utils/auth';
 
 const ReviewForm = () => {
   // //console.log({reviewId: prop?.reviewId})
@@ -77,7 +77,7 @@ const ReviewForm = () => {
             className="flex-row justify-center justify-space-between-md align-center"
             onSubmit={handleFormSubmit}
           >
-            <div className="col-12 col-lg-9">
+            <div className="review-card col-12 col-lg-9">
               <textarea
                 name="reviewText"
                 placeholder="Here's a new review..."
@@ -86,13 +86,11 @@ const ReviewForm = () => {
                 style={{ lineHeight: '1.5', resize: 'vertical', border: '1px solid grey', backgroundColor: '#f7f7f7' }}
                 onChange={handleChange}
               ></textarea>
-            </div>
-
-            <div className="col-12 col-lg-3">
-              <button className="btn btn-primary btn-block py-3 add-review-btn" type="submit" style={{ border: 'blue', backgroundColor: 'green' }}>
+              <button className="button button-primary button-block py-3 add-review-button button-squared" type="submit">
                 Add review
               </button>
             </div>
+
             {error && (
               <div className="col-12 my-3 bg-danger text-white p-3">
                 {error.message}
