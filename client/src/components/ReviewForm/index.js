@@ -10,7 +10,7 @@ import './ReviewForm.css';
 import Auth from '../../utils/auth';
 
 const ReviewForm = () => {
-  //console.log({reviewId: prop?.reviewId})
+  // //console.log({reviewId: prop?.reviewId})
 
   const [reviewText, setReviewText] = useState('');
 
@@ -34,8 +34,6 @@ const ReviewForm = () => {
       });
     },
   });
-
-
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();

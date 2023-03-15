@@ -8,6 +8,12 @@ const typeDefs = gql`
     email: String
     password: String
     reviews: [Review]!
+    playlist: [Playlist]!
+  }
+
+  type Playlist {
+    _id: String 
+    review: [Review]!
   }
 
   type Review {
@@ -31,6 +37,7 @@ const typeDefs = gql`
   }
 
   type Query {
+    playlist: [Playlist]
     users: [User]
     user(username: String!): User
     reviews(username: String): [Review]
