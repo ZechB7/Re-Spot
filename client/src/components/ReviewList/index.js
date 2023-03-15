@@ -108,13 +108,7 @@ const ReviewList = ({
               )}
             </h4>
             <div className="card-body p-2">
-              {/* <input >{review.reviewText}</input> */}
-              <input
-            // placeholder="Add your profile name..."
-            value={reviewData}
-            className="form-input w-100"
-            onChange={(event) => setName(event.target.value)}
-          />
+              <p>{review.reviewText}</p>
             </div>
             <Link
               className="button button-primary button-block button-squared"
