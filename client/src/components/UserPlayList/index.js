@@ -31,11 +31,12 @@ const UserPlayList = ({ spotUser }) => {
             <iframe 
             key={playList.uri.replace('spotify:playlist:', '')} 
             src={`https://open.spotify.com/embed/playlist/${playList.uri.replace('spotify:playlist:', '')}?utm_source=generator`} 
-            width="100%" height="250" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+            width="100%" height="155px" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
             </iframe>
 
             <Link
-              className="btn btn-primary btn-block btn-squared"
+              style={{}}
+              className="btn btn-primary btn-block"
               to={`/playlist/${playList.uri.replace('spotify:playlist:', '')}`}
             >
               Join the discussion on this playlist.

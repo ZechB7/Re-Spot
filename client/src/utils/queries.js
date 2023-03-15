@@ -19,6 +19,7 @@ export const QUERY_USER = gql`
 export const QUERY_REVIEWS = gql`
   query getReviews {
     reviews {
+      uri
       _id
       reviewText
       reviewAuthor
@@ -27,9 +28,20 @@ export const QUERY_REVIEWS = gql`
   }
 `;
 
+export const QUERY_PLAYLIST = gql`
+query Playlist($uri: String!) {
+  playlist(uri: $uri) {
+    uri
+    reviewText
+    _id
+  }
+}
+`;
+
 export const QUERY_SINGLE_REVIEW = gql`
   query getSingleReview($reviewId: ID!) {
     review(reviewId: $reivewId) {
+      uri
       _id
       reviewText
       reviewAuthor
