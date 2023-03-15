@@ -1,6 +1,14 @@
 body {
   background-color: #778899;
   color: #000000;
+ 
+}
+
+.image {
+  background-image: url("./totte-annerbrink-NehdOHCXsjs-unsplash.jpg");
+  background-size: 100% 115%;
+  padding-bottom: 70px;
+  padding-top: 40px;
 }
 
 input[type="text"],
@@ -31,7 +39,7 @@ button:focus {
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-gap: 10px;
-  
+
   
 }
 .test:hover {
@@ -61,6 +69,7 @@ button:focus {
   -ms-user-select: none; 
   animation-name: change;
   animation-duration: 8s;
+  opacity: 90%;
 }
 
 

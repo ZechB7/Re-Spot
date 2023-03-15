@@ -23,10 +23,11 @@ const Home = () => {
 
   return (
     
-    <main style={{ backgroundColor: '#778899', color: '#000000' }}>
+    <main style={{backgroundColor: '#778899',  color: '#000000' }}>
+      <div className="image">
       {/* searchUsernameBox */}
       <div className="col-8 col-md-9 mb-1">
-        <h7 style={{fontSize:"20px",marginLeft:"25%"}}>Type in the search bar below to comment on each others playlists</h7>
+        <h7 style={{fontSize:"18px",marginLeft:"25%", color:"white"}}>Type in the search bar below to comment on each others playlists</h7>
       </div>
       <div className="flex-row justify-center">      
         <div className="col-12 col-md-8 mb-3">
@@ -121,6 +122,7 @@ const Home = () => {
             <h7>Blues</h7>
           </div>
           </div>
+      </div>
       </div>
     </main>
   );
