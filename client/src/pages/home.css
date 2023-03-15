@@ -27,14 +27,14 @@ button:focus {
   align-items: center;
 }
 
-.please {
+.applications {
   display: grid;
   grid-template-columns: 400px 400px 400px;
   grid-gap: 10px;
   
   
 }
-.test:hover {
+.genrespt1:hover {
   background-color: green;
   animation-name: hovering;
   animation-duration: 1s
@@ -59,12 +59,12 @@ button:focus {
   -khtml-user-select: none; 
   -moz-user-select: none; 
   -ms-user-select: none; 
-  animation-name: testing;
+  animation-name: change;
   animation-duration: 8s;
 }
 
 
-@keyframes testing {
+@keyframes change {
   from {background-color: green;}
   to {background-color: #444;}
 }

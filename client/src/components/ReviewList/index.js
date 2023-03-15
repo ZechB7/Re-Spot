@@ -1,12 +1,7 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-import { Button } from'reactstrap';
-import {REMOVE_REVIEW, UPDATE_REVIEW } from '../../utils/mutations';
-=======
 import { Button } from 'reactstrap';
 import { REMOVE_REVIEW } from '../../utils/mutations';
->>>>>>> 5fe5526980436231acf014a4d5629485031d8b90
 import { useMutation } from '@apollo/client';
 
 import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
@@ -18,11 +13,6 @@ const ReviewList = ({
   showUsername = true,
   reviews = []
 }) => {
-<<<<<<< HEAD
-  const [reviewData, setName] = useState('');
-  const [updateReview, {error}] = useMutation(UPDATE_REVIEW);
-=======
->>>>>>> 5fe5526980436231acf014a4d5629485031d8b90
 
   const [removeReview] = useMutation(REMOVE_REVIEW, {
     update(cache, { data: { removeReview } }) {
@@ -119,14 +109,7 @@ const ReviewList = ({
             >
               Join the discussion on this review.
             </Link>
-<<<<<<< HEAD
-            <Button color="primary" onClick={() => handleUpdateReview(review._id)}>
-              {/* Update Review, review id and review text */} Update Review
-            </Button>
-            <Button color="primary" onClick={()=>handleRemoveReview(review._id)}>
-=======
             <Button color="primary" onClick={() => handleRemoveReview(review._id)}>
->>>>>>> 5fe5526980436231acf014a4d5629485031d8b90
               Remove Review
             </Button>
           </div>

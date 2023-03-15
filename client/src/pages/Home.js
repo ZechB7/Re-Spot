@@ -63,9 +63,9 @@ const Home = () => {
         </div>
       </div>
       {/* body section */}
-      <div className="please">
+      <div className="applications">
         <div className="suggestions">
-          <div className="test">
+          <div className="genrespt1">
             <h7>Podcasts</h7>
           </div>
           <div className="test">
