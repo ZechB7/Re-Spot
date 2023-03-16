@@ -101,12 +101,12 @@ const ReviewList = ({
             <div className="card-body p-2">
               <p>{review.reviewText}</p>
             </div>
-            <Link
+            {/* <Link
               className="button button-primary button-block button-squared"
               to={`/reviews/${review._id}`}
             >
               Join the discussion on this review.
-            </Link>
+            </Link> */}
             <Button color="primary" onClick={() => handleUpdateReview(review._id)}>
               Update Review
             </Button>

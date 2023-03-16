@@ -34,6 +34,8 @@ query Playlist($uri: String!) {
     uri
     reviewText
     _id
+    reviewAuthor
+    createdAt
   }
 }
 `;
