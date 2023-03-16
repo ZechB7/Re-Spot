@@ -36,12 +36,11 @@ Spotify23
 ![sceenshot]
 
 ## Functions
-
-![screenshot]
-![screenshot]
-![screenshot]
-![screenshot]
-![screenshot]
+![<img src="homepage.jpeg" width="250"/>](images/homepage.jpeg)
+![<img src="profilepage.jpeg" width="250"/>](images/profilepage.jpeg)
+![<img src="login.jpeg" width="250"/>](images/login.jpeg)
+![<img src="signup.jpeg" width="250"/>](images/signup.jpeg)
+![<img src="joindiscussion.jpeg" width="250"/>](images/joindiscussion.jpeg)
 
 ## Latest Development Changes
 ```
@@ -65,7 +64,6 @@ These are some of our purposed additions:
 - [PrimeReact](https://primereact.org)
 
 ## License
--  MIT License 
  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 # Primary Collaborators
