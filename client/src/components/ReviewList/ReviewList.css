@@ -39,13 +39,15 @@
   
 
 .card {
-    color: lightgreen;
-    background-color: #1a1a1a;
+    color: black;
+    background-color: white;
+    margin-right: 14.1%;
+    margin-left: 14.4%;
 }
 
 .card-body {
     color: #ffffff;
-    background-color: #1a1a1a;
+    background-color: white;
 }
 
 .link {
@@ -60,5 +62,10 @@
 
 .penny {
     color: green;
-    background-color: black;
+    background-color: none;
+    margin-left: 25%;
+}
+
+.tim {
+    margin-left: 0 !important;
 }

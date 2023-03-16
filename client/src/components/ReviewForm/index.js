@@ -65,12 +65,13 @@ const ReviewForm = ({uri}) => {
 
   return (
     <div className="review-form">
+      <div className="prettyPlease">
       <h3>What do you think about this?</h3>
 
       {Auth.loggedIn() ? (
         <>
           <p
-            className={`m-0 ${characterCount === 280 || error ? 'text-danger' : ''
+            className={`count ${characterCount === 280 || error ? 'text-danger' : ''
               }`}
           >
             Character Count: {characterCount}/280
@@ -87,10 +88,12 @@ const ReviewForm = ({uri}) => {
                 className="form-input w-100"
                 style={{ lineHeight: '1.5', resize: 'vertical', border: '1px solid grey', backgroundColor: '#f7f7f7' }}
                 onChange={handleChange}
-              ></textarea>
+                ></textarea>
+              <div className='jason'>
               <button className="button button-primary button-block py-3 add-review-button button-squared" type="submit">
                 Add review
               </button>
+              </div>
             </div>
 
             {error && (
@@ -110,6 +113,7 @@ const ReviewForm = ({uri}) => {
           <Link to="/signup" style={{ color: 'lightgreen' }}>signup.</Link>
         </p>
       )}
+      </div>
     </div>
   );
 };

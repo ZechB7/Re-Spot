@@ -42,7 +42,7 @@ const Home = () => {
                   style={{ backgroundColor: 'white', color: '#778899', borderColor: 'black' }}
                 />
                 <button
-                  className="btn btn-outline-secondary"
+                  className="rounded-0 rounded-end btn btn-outline-secondary"
                   type="button"
                   id="search-button"
                   style={{ backgroundColor: 'forestgreen', color: 'black', borderColor: 'forestgreen' }}
