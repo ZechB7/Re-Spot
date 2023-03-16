@@ -12,7 +12,7 @@ const UserPlayList = ({ spotUser }) => {
   const searchUser = (user) =>
     API.search(user)
       .then((res) => {
-        console.log(res.data);
+        // console.log(res.data);
         setResult(res.data)
       })
       .catch((err) => console.log(err));
