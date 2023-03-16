@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import { REMOVE_REVIEW } from '../../utils/mutations';
@@ -15,9 +14,6 @@ const ReviewList = ({
 }) => {
 
   
-
-
-
   const [removeReview] = useMutation(REMOVE_REVIEW, {
     update(cache, { data: { removeReview } }) {
       try {
@@ -52,7 +48,7 @@ const ReviewList = ({
           reviewId
         },
       });
-
+      window.location.reload();
       // setReviewText('');
     } catch (err) {
       console.error(err);
@@ -104,12 +100,12 @@ const ReviewList = ({
             <div className="card-body p-2">
               <p>{review.reviewText}</p>
             </div>
-            <Link
+            {/* <Link
               className="button button-primary button-block button-squared"
               to={`/reviews/${review._id}`}
             >
               Join the discussion on this review.
-            </Link>
+            </Link> */}
             <Button color="primary" onClick={() => handleUpdateReview(review._id)}>
               Update Review
             </Button>
