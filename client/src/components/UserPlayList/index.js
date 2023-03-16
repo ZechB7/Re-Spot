@@ -18,8 +18,10 @@ const UserPlayList = ({ spotUser }) => {
       .catch((err) => console.log(err));
 
   useEffect(() => {
-    searchUser(spotUser);
-  }, []);
+    searchUser(
+      spotUser
+      );
+  },[]);
 
   const { public_playlists: playlists } = result;
 

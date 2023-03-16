@@ -15,9 +15,6 @@ const ReviewList = ({
 }) => {
 
   
-
-
-
   const [removeReview] = useMutation(REMOVE_REVIEW, {
     update(cache, { data: { removeReview } }) {
       try {
@@ -52,7 +49,7 @@ const ReviewList = ({
           reviewId
         },
       });
-
+      window.location.reload();
       // setReviewText('');
     } catch (err) {
       console.error(err);
