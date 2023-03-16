@@ -83,7 +83,6 @@ const Home = () => {
               </div>
             </a>
           </div>
-
           <div className="genres">
             <a href="https://open.spotify.com/genre/0JQ5DAqbMKFQ00XGBls6ym">
               <div className="test">
@@ -116,7 +115,6 @@ const Home = () => {
               </div>
             </a>
           </div>
-
           <div>
             <a href="https://open.spotify.com/genre/0JQ5DAqbMKFCWjUTdzaG0e">
               <div className="test">
