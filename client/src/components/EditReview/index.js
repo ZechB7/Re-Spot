@@ -10,6 +10,8 @@ import Auth from '../../utils/auth';
 
 const EditReview = () => {
     // //console.log({reviewId: prop?.reviewId})
+    /* const { id } = useParams();
+     console.log(id);*/
 
     const [reviewText, setReviewText] = useState('');
 
@@ -62,7 +64,7 @@ const EditReview = () => {
 
     return (
         <div className="review-form">
-            <h3>What do you think about this?</h3>
+            <h3>Update Your Review?</h3>
 
             {Auth.loggedIn() ? (
                 <>
@@ -79,7 +81,7 @@ const EditReview = () => {
                         <div className="review-card col-12 col-lg-9">
                             <textarea
                                 name="reviewText"
-                                placeholder="Here's a new review..."
+
                                 value={reviewText}
                                 className="form-input w-100"
                                 style={{ lineHeight: '1.5', resize: 'vertical', border: '1px solid grey', backgroundColor: '#f7f7f7' }}
