@@ -25,14 +25,14 @@ const Playlist = () => {
       <div className="playlistCard">
         <iframe
           className="playlist"
-          src={`https://open.spotify.com/embed/playlist/${playlistId}?utm_source=generator`}
+          src={`https://open.spotify.com/embed/playlist/${uri}?utm_source=generator`}
           width="752" 
           height="500" 
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
           loading="lazy">
         </iframe>
       </div>
-      <div className="col-12 col-md-10 mb-5">
+      <div className="richard col-12 col-md-10 mb-5">
         <ReviewList
           reviews={data.playlist}
           title={`${user.username}'s thoughts...`}

@@ -39,7 +39,7 @@ const UserPlayList = ({ spotUser }) => {
 
             <Link
               style={{}}
-              className="btn btn-primary btn-block"
+              className="btn btn-primary btn-block my-2"
               to={`/playlist/${playList.uri.replace('spotify:playlist:', '')}`}
             >
               Join the discussion on this playlist.

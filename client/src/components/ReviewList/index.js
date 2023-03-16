@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import { REMOVE_REVIEW } from '../../utils/mutations';
 import { useMutation } from '@apollo/client';
+import './ReviewList.css';
 
 import { QUERY_REVIEWS, QUERY_ME, playlist } from '../../utils/queries';
 
@@ -74,15 +75,16 @@ const ReviewList = ({
   };
 
   return (
-    <div className="reviewList">
+    <div className="reviewList bg-dark">
+      <div>
       {showTitle && <h3 className="penny">{title}</h3>}
       {reviews &&
         reviews.map((review) => (
-          <div key={review._id} className="card mb-3">
+          <div key={review._id} className="card mb-3 mt-2">
             <h4 className="p-2 m-0">
               {showUsername ? (
                 <Link
-                  className="link"
+                  className="link bg-dark"
                   to={`/profiles/${review.reviewAuthor}`}
                 >
                   {review.reviewAuthor} <br />
@@ -102,19 +104,20 @@ const ReviewList = ({
               <p>{review.reviewText}</p>
             </div>
             <Link
-              className="button button-primary button-block button-squared"
+              className="rounded-0 button button-primary button-block button-squared"
               to={`/reviews/${review._id}`}
-            >
+              >
               Join the discussion on this review.
             </Link>
-            <Button color="primary" onClick={() => handleUpdateReview(review._id)}>
+            <Button className="rounded-0" onClick={() => handleUpdateReview(review._id)}>
               Update Review
             </Button>
-            <Button color="primary" onClick={() => handleRemoveReview(review._id)}>
+            <Button className="rounded-0 rounded-bottom" onClick={() => handleRemoveReview(review._id)}>
               Remove Review
             </Button>
           </div>
         ))}
+      </div>
     </div>
   );
 };
