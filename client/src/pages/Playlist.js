@@ -4,15 +4,15 @@ import { useQuery } from '@apollo/client';
 import ReviewForm from '../components/ReviewForm';
 import ReviewList from '../components/ReviewList';
 
-import { QUERY_REVIEWS, QUERY_PLAYLIST } from '../utils/queries';
+import { QUERY_PLAYLIST } from '../utils/queries';
 
 const Playlist = () => {
 
   const { uri } = useParams();
   const { username: userParam } = useParams();
   const { loading, data } = useQuery(QUERY_PLAYLIST, { variables: { uri: uri } });
-  const reviews = data?.reviews || [];
-  console.log(data);
+  // const reviews = data?.reviews || [];
+  // console.log(data);
   const user = data?.me || data?.user || {};
   if (loading) {
     return <div>Loading...</div>;

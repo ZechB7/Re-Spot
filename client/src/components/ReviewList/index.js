@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import { REMOVE_REVIEW } from '../../utils/mutations';
 import { useMutation } from '@apollo/client';
 
-import { QUERY_REVIEWS, QUERY_ME, playlist } from '../../utils/queries';
+import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
 
 const ReviewList = ({
   reviews,

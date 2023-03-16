@@ -3,7 +3,7 @@ require('dotenv').config();
 
 mongoose.connect(
 
-  process.env.MONGODB_URI || 'mongodb+srv://root:M03211990n@cluster0.ztyyztn.mongodb.net/reSpot',
+  process.env.MONGODB_URI || 'mongodb+srv://admin:password12345@classwork.gx4gsuu.mongodb.net/reSpot',
 
   {
     useNewUrlParser: true,
