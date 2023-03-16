@@ -106,7 +106,7 @@ const ReviewList = ({
               <p>{review.reviewText}</p>
             </div>
             <Link
-              className="rounded-0 button button-primary button-block button-squared"
+              className="tim rounded-0 button button-primary button-block button-squared"
               to={`/reviews/${review._id}`}
               >
               Join the discussion on this review.

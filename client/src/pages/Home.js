@@ -29,25 +29,27 @@ const Home = () => {
         </div>
         <div className="flex-row justify-center">
           <div className="col-12 col-md-8 mb-3">
-            <div className="input-group" style={{ width: '150%' }}>
-              <input
-                type="text"
-                className="form-control form-control-lg"
-                placeholder="Search by username"
-                aria-label="Search by username"
-                aria-describedby="search-button"
-                value={searchTerm}
-                onChange={handleSearchChange}
-                style={{ backgroundColor: 'white', color: '#778899', borderColor: 'black' }}
-              />
-              <button
-                className="rounded-0 rounded-end btn btn-outline-secondary"
-                type="button"
-                id="search-button"
-                style={{ backgroundColor: 'forestgreen', color: 'black', borderColor: 'forestgreen' }}
-              >
-                Search
-              </button>
+            <div className="col-12 col-md-8 mb-3">
+              <div className="input-group" style={{ width: '150%' }}>
+                <input
+                  type="text"
+                  className="form-control form-control-lg"
+                  placeholder="Search by username"
+                  aria-label="Search by username"
+                  aria-describedby="search-button"
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                  style={{ backgroundColor: 'white', color: '#778899', borderColor: 'black' }}
+                />
+                <button
+                  className="rounded-0 rounded-end btn btn-outline-secondary"
+                  type="button"
+                  id="search-button"
+                  style={{ backgroundColor: 'forestgreen', color: 'black', borderColor: 'forestgreen' }}
+                >
+                  Search
+                </button>
+              </div>
             </div>
           </div>
         </div>

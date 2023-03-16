@@ -36,6 +36,7 @@ div {
 }
 
 .button {
+  width: 100% !important;
   text-align: center;
   display: inline-block;
   padding: 0.75rem 1.2rem;
@@ -81,3 +82,7 @@ div {
   border-radius: 0.3rem 0.3rem 0 0;
 }
 
+.jason {
+  margin-left: -13.2%;
+  margin-right: 13%;
+}

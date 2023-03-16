@@ -89,9 +89,11 @@ const ReviewForm = ({uri}) => {
                 style={{ lineHeight: '1.5', resize: 'vertical', border: '1px solid grey', backgroundColor: '#f7f7f7' }}
                 onChange={handleChange}
                 ></textarea>
+              <div className='jason'>
               <button className="button button-primary button-block py-3 add-review-button button-squared" type="submit">
                 Add review
               </button>
+              </div>
             </div>
 
             {error && (
