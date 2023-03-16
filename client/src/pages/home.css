@@ -69,7 +69,6 @@ button:focus {
   -ms-user-select: none; 
   animation-name: change;
   animation-duration: 8s;
-  opacity: 83%;
   width: 105%;
 }
 
