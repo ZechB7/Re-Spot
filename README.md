@@ -65,7 +65,8 @@ These are some of our purposed additions:
 - [PrimeReact](https://primereact.org)
 
 ## License
-- [MIT](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)
+-  MIT License 
+ [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
 # Primary Collaborators
 - Reuben Schmolke [Github](https://github.com/RoobyDoobster)

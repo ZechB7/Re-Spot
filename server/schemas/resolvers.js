@@ -10,8 +10,8 @@ const resolvers = {
     user: async (parent, { username }) => {
       return User.findOne({ username }).populate('reviews');
     },
-    playlist: async (parent, { playlistid }) => {
-      return Playlist.findOne({ _id: playlistid });
+    playlist: async (parent, { uri }) => {
+      return Review.find({ uri: uri });
     },
     reviews: async (parent, { username }) => {
       const params = username ? { username } : {};
@@ -51,9 +51,10 @@ const resolvers = {
 
       return { token, user };
     },
-    addReview: async (parent, { reviewText }, context) => {
+    addReview: async (parent, { reviewText,uri }, context) => {
       if (context.user) {
         const review = await Review.create({
+          uri,
           reviewText,
           reviewAuthor: context.user.username,
         });

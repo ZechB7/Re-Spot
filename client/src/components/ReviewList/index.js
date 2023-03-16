@@ -1,18 +1,19 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import { REMOVE_REVIEW } from '../../utils/mutations';
 import { useMutation } from '@apollo/client';
 
-import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
+import { QUERY_REVIEWS, QUERY_ME, playlist } from '../../utils/queries';
 
 const ReviewList = ({
-  // reviews,
+  reviews,
   title,
   showTitle = true,
   showUsername = true,
-  reviews = []
+  // reviews = []
 }) => {
+
 
   const [removeReview] = useMutation(REMOVE_REVIEW, {
     update(cache, { data: { removeReview } }) {
@@ -55,25 +56,22 @@ const ReviewList = ({
     }
   };
 
-  if (!reviews.length) {
-    return <h3></h3>;
+  if (!reviews) {
+    return <h3>No reviews yet!</h3>;
   }
 
-  // const handleUpdateReview = async (reviewId, reviewText) => {
-  //   try {
-  //     // console.log(`handleRemoveReview clicked! ${reviewId}`);
-  //     const { data } = await updateReview({
-  //       variables: {
-  //         reviewText,
-  //         reviewId,
-
-  //       },
-  //     })
-   
-  //   } catch (err) {
-  //     console.error(err)
-  //   }
-  // }
+  const handleUpdateReview = async (reviewId) => {
+    //event.preventDefault();
+    //const {reviewId} = event.target;
+    console.log(`handleUpdateReview clicked! ${reviewId}`);
+    try {
+      window.location.replace("EditReviewPage/" + reviewId);
+    }
+    // setReviewText('');
+    catch (err) {
+      console.error(err);
+    }
+  };
 
   return (
     <div className="reviewList">
@@ -109,6 +107,9 @@ const ReviewList = ({
             >
               Join the discussion on this review.
             </Link>
+            <Button color="primary" onClick={() => handleUpdateReview(review._id)}>
+              Update Review
+            </Button>
             <Button color="primary" onClick={() => handleRemoveReview(review._id)}>
               Remove Review
             </Button>

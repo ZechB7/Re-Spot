@@ -2,7 +2,6 @@ import React from 'react';
 import { Navigate, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import ReviewForm from '../components/ReviewForm';
 import ReviewList from '../components/ReviewList';
 import UserPlayList from '../components/UserPlayList'
 
@@ -63,9 +62,7 @@ const Profile = () => {
           <div
             className="col-12 col-md-10 mb-3 p-3"
             style={{ border: '1px dotted #1a1a1a' }}
-
           >
-            <ReviewForm />
           </div>
         )}
       </div>

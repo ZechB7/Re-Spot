@@ -72,6 +72,7 @@ const Signup = () => {
                   type="text"
                   value={formState.spotUser}
                   onChange={handleChange}
+                  style= {{backgroundColor:'#92e6a7'}}
                 />
                 <input
                   className="form-input"

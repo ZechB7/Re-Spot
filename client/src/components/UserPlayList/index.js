@@ -38,7 +38,8 @@ const UserPlayList = ({ spotUser }) => {
             </iframe>
 
             <Link
-              className="btn btn-primary btn-block btn-squared"
+              style={{}}
+              className="btn btn-primary btn-block"
               to={`/playlist/${playList.uri.replace('spotify:playlist:', '')}`}
             >
               Join the discussion on this playlist.

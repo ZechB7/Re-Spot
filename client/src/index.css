@@ -422,15 +422,8 @@ button {
   margin: 0;
 }
 
-a {
-  color: #1b89bc;
-  text-decoration: none;
-} 
 
-a:hover {
-  color: #065b83;
-  text-decoration: underline;
-}
+
 
 /* HEIGHT / WIDTH UTILS */
 .w-100 {
@@ -914,9 +907,7 @@ a:hover {
   color: #000000 !important;
 }
 
-.text-link {
-  color: #1b89bc !important;
-}
+
 
 /* BACKGROUND UTILS */
 .bg-primary {
@@ -947,9 +938,6 @@ a:hover {
   background-color: #000000 !important;
 }
 
-.bg-link {
-  background-color: #1b89bc !important;
-}
 
 /* DISPLAY */
 .display-none {
@@ -1074,14 +1062,8 @@ a:hover {
   background-color: #666666;
 }
 
-.btn.btn-link {
-  background-color: #1b89bc;
-  color: #ffffff;
-}
 
-.btn.btn-link:hover {
-  background-color: #31a9e1;
-}
+
 
 .card {
   border: 1px solid #1a1a1a;
