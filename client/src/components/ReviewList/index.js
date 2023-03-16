@@ -1,10 +1,9 @@
-import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from 'reactstrap';
 import { REMOVE_REVIEW } from '../../utils/mutations';
 import { useMutation } from '@apollo/client';
 
-import { QUERY_REVIEWS, QUERY_ME, playlist } from '../../utils/queries';
+import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
 
 const ReviewList = ({
   reviews,
@@ -104,12 +103,12 @@ const ReviewList = ({
             <div className="card-body p-2">
               <p>{review.reviewText}</p>
             </div>
-            <Link
+            {/* <Link
               className="button button-primary button-block button-squared"
               to={`/reviews/${review._id}`}
             >
               Join the discussion on this review.
-            </Link>
+            </Link> */}
             <Button color="primary" onClick={() => handleUpdateReview(review._id)}>
               Update Review
             </Button>
