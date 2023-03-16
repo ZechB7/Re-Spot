@@ -1,0 +1,66 @@
+h3 {
+    color: green;
+    font-family: Courier New, Monospace;
+  }
+  
+  div {
+    justify-items: center !important;
+  }
+  
+  .review-card {
+    width:100%;
+  }
+  
+  .btn.btn-block {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+  
+  .button {
+    text-align: center;
+    display: inline-block;
+    padding: 0.75rem 1.2rem;
+    margin: 0;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 0 0 .3rem .3rem !important;
+    border: none;
+    outline: none;
+    color: black;
+    background-color: green;
+    transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  }
+  
+  .button.button-block {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  
+  .button.button-primary {
+    background-color: green;
+    color: black;
+    border-color: green;
+  }
+  
+  .button.button-primary:hover {
+    background-color: rgb(0, 255, 0);
+    border-color: lightgreen;
+    color: black;
+    text-decoration: none;
+  }
+  
+  .review-form .form-input {
+    width: 100%;
+    padding: 0.75rem;
+    color: #1a1a1a;
+    background-color: #ffffff;
+    margin: 0;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 0.3rem 0.3rem 0 0;
+  }
+  
+  

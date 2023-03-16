@@ -5,6 +5,7 @@ import { UPDATE_REVIEW } from '../../utils/mutations';
 
 import { QUERY_REVIEWS, QUERY_ME } from '../../utils/queries';
 
+import './EditReview.css';
 
 import Auth from '../../utils/auth';
 
