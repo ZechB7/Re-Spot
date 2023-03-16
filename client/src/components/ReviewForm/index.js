@@ -47,6 +47,7 @@ const ReviewForm = ({uri}) => {
         },
       });
       setReviewText('');
+      window.location.reload();
     } catch (err) {
       console.error(err);
     }
