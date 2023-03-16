@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/client';
 
 import ReviewForm from '../components/ReviewForm';
 import ReviewList from '../components/ReviewList';
+import './Playlist.css'
 
 import { QUERY_PLAYLIST } from '../utils/queries';
 
@@ -20,11 +21,18 @@ const Playlist = () => {
 
   return (
     <div className="my-3">
-      <iframe
-        src={`https://open.spotify.com/embed/playlist/${uri}?utm_source=generator`}
-        width="100%" height="250" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-      </iframe>
-      <div className="col-12 col-md-10 mb-5">
+      {/* playlist name */}
+      <div className="playlistCard">
+        <iframe
+          className="playlist"
+          src={`https://open.spotify.com/embed/playlist/${uri}?utm_source=generator`}
+          width="752" 
+          height="500" 
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+          loading="lazy">
+        </iframe>
+      </div>
+      <div className="richard col-12 col-md-10 mb-5">
         <ReviewList
           reviews={data.playlist}
           title={`${user.username}'s thoughts...`}
