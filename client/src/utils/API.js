@@ -10,11 +10,10 @@ const search = async (spotUser) => {
             'X-RapidAPI-Host': 'spotify23.p.rapidapi.com'
         },
         params: {
-            id: `${spotUser}`, playlistLimit: '2', artistLimit: '10'
+            id: `${spotUser}`, playlistLimit: '5', artistLimit: '10'
         },
     })
 }
 
 export default { search };
-
 // Export an object with a "search" method that searches the Giphy API for the passed query
