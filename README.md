@@ -44,7 +44,7 @@ Spotify23
 
 ## Latest Development Changes
 ```
-Deployed: 
+Deployed: https://respot-uta.herokuapp.com/
 ```
 
 ## Future Features
