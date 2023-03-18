@@ -22,9 +22,19 @@ Spotify23
 
 ## Database
 
+MongonDB
+    - MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
 
+Mongoose
+    - Mongoose is a JavaScript object-oriented programming library that creates a connection between MongoDB and the Node.js JavaScript runtime environment
 
 ## WireFrame
+
+![sceenshot](./images/wirefram%20homepage.png)
+![sceenshot](./images/wireframe%20signup.png)
+![sceenshot](./images/login.jpeg)
+![sceenshot](./images/wireframe%20commentpage.png)
+![sceenshot](./images/wireframe%20thread.png)
 
 - HTML - this is the markup language for our document to be displayed on the web browser
 - CSS - this is the language we use to style an HTML document as well as describes how HTML elements should be displayed.
@@ -33,7 +43,7 @@ Spotify23
 - MongoDB - this is an open-source, NoSQL, document-oriented database management system. It is designed to store and manage data in a flexible and scalable manner.
 
 ## Preview
-![sceenshot]
+![sceenshot](./images/preview.JPG)
 
 ## Functions
 ![<img src="homepage.jpeg" width="250"/>](images/homepage.jpeg)
