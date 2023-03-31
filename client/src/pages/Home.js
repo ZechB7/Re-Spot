@@ -34,7 +34,7 @@ const Home = () => {
                 <input
                   type="text"
                   className="form-control form-control-lg"
-                  placeholder="Search by username"
+                  placeholder="Search by genre"
                   aria-label="Search by username"
                   aria-describedby="search-button"
                   value={searchTerm}
